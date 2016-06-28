@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-test-app",
+  "version": "1.0.0",
+  "description": "NodeJS Test App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bing.search": "^1.0.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.6"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
+}
