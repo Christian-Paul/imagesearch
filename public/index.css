@@ -1,0 +1,35 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto"; }
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-container .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-container .main .title {
+      font-size: 4em; }
+    .main-container .main .user-input {
+      margin-top: 2em;
+      width: 30vw;
+      height: 2.25em; }
+    .main-container .main .buttons-container {
+      margin-top: 1em; }
+      .main-container .main .buttons-container .button {
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer; }
+      .main-container .main .buttons-container .search {
+        margin-right: 2em; }
+
+/*# sourceMappingURL=index.css.map */

@@ -10,6 +10,8 @@ app.enable('trust proxy');
 
 var port = process.env.PORT || 3000;
 
+app.use(express.static('public'));
+
 // mongoose initialization
 mongoose.connect('mongodb://hero:ku@ds064278.mlab.com:64278/imagesearch');
 var db = mongoose.connection;
@@ -18,7 +20,6 @@ var searchSchema = new mongoose.Schema({
     time: String
 });
 var Searches = mongoose.model('Searches', searchSchema);
-
 
 // pads number with a 0 on the left if the number is single digits
 // used for month and day
@@ -30,6 +31,9 @@ function zeroPad(num) {
     return num;
 }
 
+app.get('/', function(req, res) {
+    res.render('public/index.html');
+}); 
 
 // search term is placed after /search/
 app.get('/search/:id', function(req, res) { 
