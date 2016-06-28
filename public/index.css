@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "Roboto"; }
+  font-family: "Audiowide"; }
 
 .main-container {
   width: 100vw;
@@ -16,19 +16,24 @@ body, html {
     .main-container .main .title {
       font-size: 4em; }
     .main-container .main .user-input {
-      margin-top: 2em;
-      width: 30vw;
-      height: 2.25em; }
+      margin-top: 3em;
+      width: 40em;
+      height: 3em;
+      padding: 6px; }
     .main-container .main .buttons-container {
-      margin-top: 1em; }
+      margin-top: 2em; }
       .main-container .main .buttons-container .button {
         padding-right: 1.5em;
         padding-left: 1.5em;
         padding-top: 0.75em;
         padding-bottom: 0.75em;
-        background-color: #ccc;
+        background-color: #ddd;
         border: none;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all ease 0.25s;
+        font-family: "Open Sans"; }
+      .main-container .main .buttons-container .button:hover {
+        box-shadow: inset 0px 0px 0px 1px #111; }
       .main-container .main .buttons-container .search {
         margin-right: 2em; }
 
